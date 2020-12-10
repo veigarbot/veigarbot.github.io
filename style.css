@@ -324,6 +324,7 @@ a:link {
 
 .aboutContent {
     padding-bottom: 50px;
+	color: #666666;
 }
 
 footer {
@@ -360,12 +361,12 @@ hr {
 }
 
 .serverA {
-    color: #551A8B !important;
+    color: #FD0181 !important;
     font-weight: bold;
 }
 
 .serverA:visited, .serverA:hover, .serverA:active {
-    color: #551A8B;
+    color: #FD0181;
 }
 
 #contacts {
