@@ -290,7 +290,7 @@ table th {
 }
 
 a:link {
-    color: #D6249A;
+    color: #FD0181;
     text-decoration: none;
 }
 
@@ -338,10 +338,9 @@ a:link {
 footer {
     background-color: #111111;
     text-align: center;
-    font-family: FontLight;
+    font-family: FontRegular;
     color: white;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 14px;
 }
 
 footer>p {
@@ -350,7 +349,7 @@ footer>p {
 }
 
 footer>p>span {
-    color: red;
+    color: #FD0181;
 }
 
 footer>p>br {
