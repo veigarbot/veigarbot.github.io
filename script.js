@@ -23,13 +23,13 @@ $(document).ready(function () {
 
     $(".topBar-Commands").click(function () {
         $("html, body").animate({
-            scrollTop: $("#commands").offset().top
+            scrollTop: $("#commands").offset().top - 70
         }, 2000);
     });
 
     $(".topBar-About").click(function () {
         $("html, body").animate({
-            scrollTop: $("#about").offset().top
+            scrollTop: $("#about").offset().top - 70
         }, 2000);
     });
 
