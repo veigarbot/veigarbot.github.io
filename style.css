@@ -263,11 +263,11 @@ table {
     table-layout: fixed;
     font-family: FontRegular;
     margin-top: 20px;
-    border: 2px #CC2B9D solid;
+    border: 2px #FD0181 solid;
 }
 
 table th {
-    background-color: #CC2B9D;
+    background-color: #FD0181;
     font-size: 15px;
     color: white;
 }
@@ -358,7 +358,7 @@ footer>p>br {
 }
 
 footer>p>a {
-    color: #CC2B9D;
+    color: #FD0181;
 }
 
 hr {
@@ -468,7 +468,7 @@ hr {
 
 @media screen and (max-width: 660px) {
     .pinkBg {
-        background-color: #CC2B9D;
+        background-color: #FD0181;
         color: white;
     }
 
