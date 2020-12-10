@@ -238,7 +238,15 @@ html, body {
     margin: 0 auto;
 }
 
-.tabela>.commandsTitle, .contactsTitle {
+.tabela>.commandsTitle {
+    text-align: center;
+    font-family: FontBold;
+    font-size: 28px;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.contactsTitle {
     text-align: center;
     font-family: FontBold;
     font-size: 28px;
