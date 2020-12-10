@@ -257,25 +257,28 @@ html, body {
 
 table {
     border-collapse: collapse;
-    margin: 0;
+    margin: 12px;
     padding: 0;
-    width: 100%;
+    width: calc(100% - 24px);
     table-layout: fixed;
     font-family: FontRegular;
+}
+
+.tableOutline {
     margin-top: 20px;
-    border: 2px #FD0181 solid;
+    border: 4px #fff solid;
 }
 
 table th {
     background-color: #FD0181;
+    color: #fff;
     font-size: 15px;
-    color: white;
 }
 
 table tr {
-    background: #f8f8f8;
-    border: 1px solid #ddd;
     padding: .35em;
+    background-color: #fff;
+    color: #000;
 }
 
 table th, table td {
@@ -304,7 +307,8 @@ a:link {
 }
 
 .slightlyColored {
-    background-color: #F3F6F6;
+    background-color: #000;
+	color: #fff;
 }
 
 #about {
