@@ -346,6 +346,9 @@ footer {
 footer>p {
     padding-top: 10px;
     padding-bottom: 10px;
+	width: 47%;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 footer>p>span {
