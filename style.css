@@ -307,12 +307,7 @@ a:link {
 }
 
 #about {
-    background: #DF18A6;
-    /* Fallback for old browsers. */
-    background: -webkit-linear-gradient(to right, #b24592, #8C45AF);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b24592, #8C45AF);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #fff;
     width: 100%;
     text-align: center;
     font-family: FontRegular;
@@ -340,7 +335,8 @@ a:link {
 }
 
 footer {
-    background-color: #1A1A1A;
+    background-color: #fafafa;
+	border-top: 1px solid #eaeaea;
     text-align: center;
     font-family: FontLight;
     color: white;
@@ -382,12 +378,7 @@ hr {
 }
 
 #contacts {
-    background: #DF18A6;
-    /* Fallback for old browsers. */
-    background: -webkit-linear-gradient(to right, #b24592, #8C45AF);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b24592, #8C45AF);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #fff;
     width: 100%;
     text-align: center;
     font-family: FontRegular;
