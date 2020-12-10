@@ -38,14 +38,14 @@ $(document).ready(function () {
         ps.update();
 
         if ($(window).width() > 466) {
-            $(".dropbtn").css("background-color", "#303236");
+            $(".dropbtn").css("background-color", "#FFF").css("color", "#000");
             $("body").disableScroll();
         }
     });
 
     $(".dropdown-content, .dropbtn").on("mouseout", function () {
         if ($(window).width() > 466) {
-            $(".dropbtn").css("background-color", "inherit");
+            $(".dropbtn").css("background-color", "inherit").css("color", "#FFF");
             $("body").enableScroll();
         }
     });
