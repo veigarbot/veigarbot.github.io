@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Baron, a LoL Discord Bot.</title>
+    <meta property="og:title" content="Baron, a LoL Discord Bot." />
+    <meta property="og:url" content="https://baronbot.github.io/" />
+    <meta property="og:image" content="https://i.imgur.com/vfq5UJX.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Baron Bot" />
+    <meta property="og:keywords" content="Baron,Baron Bot,Discord Bot,League of Legends Discord bot,League of Legends" />
+    <meta property="og:description" content="The most complete League of Legends Discord bot. Multiple languages, live games, profiles, full champion guides, summoner linking, and more!"/>
+    <meta name="description" content="The most complete League of Legends Discord bot. Multiple languages, live games, profiles, full champion guides, summoner linking, and more!" />
+    <meta name="theme-color" content="#da259d">
+
+    <meta name="google-site-verification" content="sLzWNhG3DrTgOrAvvqsnv9XjnZKrQGZqTkT7OlyIAac" />
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="lightbox/css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="scroller/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="modal/modal.css">
+</head>
+
+<body>
+    <div id="firstDiv">
+        <div class="topBar">
+            <a class="topBar-Title" style="float: left;">BARON BOT</a>
+            <img src="/imgs/Avatar.png" class="topBarImg">
+
+            <div class="lang-dropdown">
+                <div class="dropbtn"><img class="dropbtn-img" src="https://image.ibb.co/kfd1A9/United_Kingdom.png"><span
+                        class="dropbtn-txt">English</span><span class="dropbtn-arrow">&emsp;▼</span></div>
+                <div class="dropdown-content">
+                    <a locale="en"><li><img src="https://image.ibb.co/kfd1A9/United_Kingdom.png" /><span class="lang-name">English</span></li></a>
+                    <a locale="de"><li><img src="https://image.ibb.co/d0MQKK/Germany.png" /><span class="lang-name">Deutsch</span></li></a>
+                    <a locale="es"><li><img src="https://image.ibb.co/f3dexp/Spain.png" /><span class="lang-name">Español</span></li></a>
+                    <a locale="fr"><li><img src="https://image.ibb.co/fwgzxp/France.png" /><span class="lang-name">Français</span></li></a>
+                    <a locale="gr"><li><img src="https://i.ibb.co/sPx7gWk/Grecee.png" /><span class="lang-name">Ελληνικά</span></li></a>
+                    <a locale="hu"><li><img src="https://image.ibb.co/dkHuV9/Hungary.png" /><span class="lang-name">Magyar</span></li></a>
+                    <a locale="nl"><li><img src="https://image.ibb.co/jhmoq9/Netherlands.png" /><span class="lang-name">Nederlands</span></li></a>
+                    <a locale="pl"><li><img src="https://image.ibb.co/e5q3OU/Poland.png" /><span class="lang-name">Polski</span></li></a>
+                    <a locale="br"><li><img src="https://image.ibb.co/ezMMA9/Brazil.png" /><span class="lang-name">Português</span></li></a>
+                    <a locale="pt"><li><img src="https://image.ibb.co/cuRzxp/Portugal.png" /><span class="lang-name">Português</span></li></a>
+                    <a locale="ar"><li><img src="https://image.ibb.co/ktB5Mp/Egypt.png" /><span class="lang-name">العربية</span></li></a>
+                    <a locale="tr"><li><img src="https://i.ibb.co/pjPcRQt/Turkey.png" /><span class="lang-name">Türkçe</span></li></a>
+                    <a locale="ru"><li><img src="https://image.ibb.co/iq8ZV9/Russia.png" /><span class="lang-name">Русский язык</span></li></a>
+                    <a locale="kr"><li><img src="https://i.ibb.co/zmvBmM3/Korea.png" /><span class="lang-name">한국어</span></li></a>
+                </div>
+            </div>
+
+            <div translate="topbar.getBaron" class="topBar-GetBaron"></div>
+            <div translate="topbar.commands" class="topBar-Commands"></div>
+            <div translate="topbar.about" class="topBar-About"></div>
+        </div>
+        <div class="firstDiv-Center">
+            <div class="baronImage">
+                <img src="imgs/WebsiteImageWithLangs.png?1">
+            </div>
+            <div class="stats">
+                <div class="statsServers">
+                    <div><span class="statsTitle" translate="stats.servers"></span>
+                        <br><span class="statsServersNum num"></span></div>
+                </div>
+                <div class="statsUsers">
+                    <div><span class="statsTitle" translate="stats.users"></span>
+                        <br><span class="statsUsersNum num"></span></div>
+                </div>
+                <div class="statsChannels">
+                    <div><span class="statsTitle" translate="stats.channels"></span>
+                        <br><span class="statsChannelsNum num"></span></div>
+                </div>
+            </div>
+        </div>
+        <a href="https://discord.gg/9zbTmrE" target="_blank"><img href="https://discord.gg/9zbTmrE" src="https://discordapp.com/api/guilds/265503362739339274/embed.png" class="discordServerImg"></a>
+    </div>
+    <div id="about">
+        <div class="aboutWrapper">
+            <p translate="about.title" class="aboutTitle"></p>
+            <p translate="about.description" class="aboutContent"></p>
+        </div>
+    </div>
+    <div id="about" style="background-image: url(./imgs/rs_banner.png); background-position: center">
+        <div class="aboutWrapper">
+            <p class="aboutTitle">TFT FEATURES</p>
+            <p>Looking for some Teamfight Tactics features and statistics?</p>
+            <br>
+            <p style="padding-bottom: 50px;">Check out <a href="https://runespirit.github.io/" target="_blank" style="color: white; text-decoration: underline;"><b>Runespirit</b></a>, a fully-fledged Discord Bot and Baron's baby brother!</p>
+        </div>
+    </div>
+    <div id="commands">
+        <div class="tabela">
+            <p translate="commands.title" class="commandsTitle"></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th translate="commands.commands" scope="col"></th>
+                        <th translate="commands.description" scope="col"></th>
+                        <th translate="commands.usage" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b</td>
+                        <td translate="commandsDesc.baron" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.baron" href="command_examples/baron.png" data-lightbox="baron"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b ability</td>
+                        <td translate="commandsDesc.ability" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.ability" href="command_examples/ability.png" data-lightbox="ability"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b add/remove</td>
+                        <td translate="commandsDesc.add-remove" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.add-remove" href="command_examples/addRemove.png" data-lightbox="addRemove"></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b bans</td>
+                        <td translate="commandsDesc.bans" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.bans" href="command_examples/bans.png" data-lightbox="bans"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b best</td>
+                        <td translate="commandsDesc.best" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.best" href="command_examples/best.png" data-lightbox="best"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b champion</td>
+                        <td translate="commandsDesc.champion" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.champion" href="command_examples/champion.png" data-lightbox="champion"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b counters</td>
+                        <td translate="commandsDesc.counters" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.counters" href="command_examples/counters.png" data-lightbox="counters"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b disable/enable</td>
+                        <td translate="commandsDesc.disable-enable" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.disable-enable" href="command_examples/disableEnable.png" data-lightbox="disableEnable"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b help</td>
+                        <td translate="commandsDesc.help" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.help" href="command_examples/help.png" data-lightbox="help"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b info</td>
+                        <td translate="commandsDesc.info" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.info" href="command_examples/info.png" data-lightbox="info"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b invite</td>
+                        <td translate="commandsDesc.invite" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.invite" href="command_examples/invite.png" data-lightbox="invite"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b item</td>
+                        <td translate="commandsDesc.item" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.item" href="command_examples/item.png" data-lightbox="item"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b language</td>
+                        <td translate="commandsDesc.language" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.language" href="command_examples/language.png" data-lightbox="language"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b lastplayed</td>
+                        <td translate="commandsDesc.lastplayed" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.lastplayed" href="command_examples/lastplayed.png" data-lightbox="lastplayed"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b live</td>
+                        <td translate="commandsDesc.live" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.live" href="command_examples/live.png" data-lightbox="live"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b mastery</td>
+                        <td translate="commandsDesc.mastery" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.mastery" href="command_examples/mastery.png" data-lightbox="mastery"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b patchnotes</td>
+                        <td translate="commandsDesc.patchnotes" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.patchnotes" href="command_examples/patchnotes.png" data-lightbox="patchnotes"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b playlists</td>
+                        <td translate="commandsDesc.playlists" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.playlists" href="command_examples/playlists.png" data-lightbox="profile"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b profile</td>
+                        <td translate="commandsDesc.profile" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.profile" href="command_examples/profile.png" data-lightbox="profile"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b rotation</td>
+                        <td translate="commandsDesc.rotation" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.rotation" href="command_examples/rotation.png" data-lightbox="rotation"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b rune</td>
+                        <td translate="commandsDesc.rune" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.rune" href="command_examples/rune.png" data-lightbox="rune">!</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b sales</td>
+                        <td translate="commandsDesc.sales" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.sales" href="command_examples/sales.png" data-lightbox="sales"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b serverupdates</td>
+                        <td translate="commandsDesc.serverupdates" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.serverupdates" href="command_examples/serverupdates.png" data-lightbox="serverupdates">!</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b skins</td>
+                        <td translate="commandsDesc.skins" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.skins" href="command_examples/skins.png" data-lightbox="skins"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b status</td>
+                        <td translate="commandsDesc.status" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.status" href="command_examples/status.png" data-lightbox="status"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b streams</td>
+                        <td translate="commandsDesc.streams" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.streams" href="command_examples/streams.png" data-lightbox="status"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b synergy</td>
+                        <td translate="commandsDesc.synergy" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.synergy" href="command_examples/synergy.png" data-lightbox="status"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b tips</td>
+                        <td translate="commandsDesc.tips" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.tips" href="command_examples/tips.png" data-lightbox="tips"></a></td>
+                    </tr>
+                    <tr class="slightlyColored">
+                        <td data-label="Command" class="pinkBg">!b topplayers</td>
+                        <td translate="commandsDesc.topplayers" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.topplayers" href="command_examples/topplayers.png" data-lightbox="topplayers"></a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Command" class="pinkBg">!b ultimatebravery</td>
+                        <td translate="commandsDesc.ultimatebravery" data-label="Description"></td>
+                        <td data-label="Usage"><a translate="commandsUsage.ultimatebravery" href="command_examples/ultimatebravery.png" data-lightbox="ultimatebravery"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+        </div>
+    </div>
+    <!-- <div id="about" style="background-image: url(./imgs/giveaway_bg.png);">
+        <div class="aboutWrapper">
+            <p class="aboutTitle">GIVEAWAY</p>
+            <p>We're running a <b style="text-decoration: underline; text-underline-position: under;">HUGE giveaway</b> with multiple winners that includes <b style="text-decoration: underline; text-underline-position: under;">200.000 RP and 100 months of Nitro</b>. And much more!</p>
+            <br>
+            <p style="padding-bottom: 50px;"><a href="https://gleam.io/4f78h/players-republik-loltft-giveaway" target="_blank" style="font-weight: bold; font-size: 25px; color: white">ENTER HERE!</a></p>
+        </div>
+    </div> -->
+    <div id="about">
+        <div class="aboutWrapper">
+            <p translate="contact.title" class="aboutTitle"></p>
+            <br>
+            <p translate="contact.description" class="aboutContent"></p>
+            <a href="https://discord.gg/9zbTmrE" target="_blank"><img href="https://discord.gg/9zbTmrE" src="https://discordapp.com/api/guilds/265503362739339274/embed.png" style="margin-bottom: 30px;"></a>
+        </div>
+    </div>
+    <footer>
+        <p translate="footer.text"></p>
+        <div class="translationsDiv btn trigger" style="cursor: pointer;">
+            <img src="imgs/languagesIcon.png" style="height: 20px; margin-bottom: 7px; vertical-align: top; margin-right: 5px;"><span style="font-family: FontRegular; font-size: 0.95em;">Translations</span>
+        </div>
+        <a target="_blank" href="https://discordbots.org/bot/240482527695994880">
+            <img src="https://discordbots.org/api/widget/lib/240482527695994880.svg?noavatar=true" alt="Discord Music Bot" />
+        </a>
+        <br>
+        <br>
+        <p>Baron Bot isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</p>
+    </footer>
+
+    <!-- Translators modal. -->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div class="head">
+                <span>Thank you!</span>
+                <a class="btn-close trigger"></a>
+            </div>
+            <div class="content">
+                <p>Thank you very much to every single one of you that helped Baron Bot getting a new voice, and by doing so, reach new players and communities!</p>
+                <div class="translatorsListWrapper">
+                    <div class="translatorsList translatorsList1"></div>
+                    <div class="translatorsList translatorsList2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
+    <script src="lightbox/js/lightbox.js"></script>
+    <script src="scroller/perfect-scrollbar.js"></script>
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+        (function(t,l){
+            let w=window,d=document,s=d.createElement('script'),f=d.getElementsByTagName('script')[0];
+            w[t]=w[t]||function(){(w["_rgea"]=w["_rgea"]||[["uts",new Date()]]).push(Array.prototype.slice.call(arguments));w.RGEA&&w.RGEA.p();};
+            s.type='text/javascript'; s.async=true; s.defer=true; s.src=l; f.parentNode.insertBefore(s,f);
+        })("rgea", "https://static.developer.riotgames.com/js/rgea.min.js");
+    
+        rgea("propertyId", "RGEA0002-4d189a32-4b66-4f9b-8a2a-e7c1dae791c6");
+        //rgea("uid", "puuid"); // assuming the user is verified; encrypted puuid
+        //rgea("lolpid", "platformId"); // league platform id (na1, la2, euw1, kr, etc)
+        //rgea("lolaid", "accountId"); // assuming the user is verified; encrypted account id
+        rgea("anonymous", false); // defaults to true
+    </script>    
+</body>
+</html>
