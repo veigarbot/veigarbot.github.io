@@ -14,22 +14,6 @@ $(document).ready(function () {
         $(".statsChannelsNum").text(numberWithCommas(result.stats.c));
 
         console.log("[x] Stats set successfully.");
-
-        //Insert translators.
-        let uniqueTranslators = _.uniqBy(result.translators, "n");
-        let translatorsArray = _.sortBy(uniqueTranslators, "l");
-
-        let left = true;
-        for (i in translatorsArray) {
-            if (left) {
-                $(".translatorsList1").append("<div class='translatorsListItem'><img src='" + translatorsArray[i].a + "'><span>" + translatorsArray[i].n + "</span></div>")
-                left = false;
-            } else {
-                $(".translatorsList2").append("<div class='translatorsListItem'><img src='" + translatorsArray[i].a + "'><span>" + translatorsArray[i].n + "</span></div>")
-                left = true;
-            }
-        }
-        console.log("[x] Translators set successfully.");
     });
 
     //Top bar "shortcuts".

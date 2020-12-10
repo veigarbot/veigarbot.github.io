@@ -230,13 +230,7 @@ html, body {
 
 #commands {
     width: 100%;
-    background-color: #060607;
-    background: #7474BF;
-    /* Fallback for old browsers. */
-    background: -webkit-linear-gradient(to right, #5A51DF, #7474BF);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5A51DF, #7474BF);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000;
 }
 
 #commands>.tabela {
@@ -307,7 +301,7 @@ a:link {
 }
 
 #about {
-    background: #fff;
+    background: #FFF;
     width: 100%;
     text-align: center;
     font-family: FontRegular;
@@ -335,8 +329,7 @@ a:link {
 }
 
 footer {
-    background-color: #fafafa;
-	border-top: 1px solid #eaeaea;
+    background-color: #111111;
     text-align: center;
     font-family: FontLight;
     color: white;
@@ -378,7 +371,7 @@ hr {
 }
 
 #contacts {
-    background: #fff;
+    background: #000;
     width: 100%;
     text-align: center;
     font-family: FontRegular;
