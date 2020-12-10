@@ -242,10 +242,9 @@ html, body {
     text-align: center;
     font-family: FontBold;
     font-size: 28px;
-    color: white;
+    color: black;
     padding-top: 50px;
     padding-bottom: 20px;
-    text-decoration: underline;
 }
 
 table {
@@ -318,10 +317,9 @@ a:link {
     text-align: center;
     font-family: FontBold;
     font-size: 28px;
-    color: white;
+    color: black;
     padding-top: 50px;
     padding-bottom: 20px;
-    text-decoration: underline;
 }
 
 .aboutContent {
