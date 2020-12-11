@@ -234,7 +234,9 @@ html, body {
 }
 
 #commands>.tabela {
-    width: 47%;
+    max-width: 900px;
+	padding: 0 60px 0 60px;
+	width: auto;
     margin: 0 auto;
 }
 
@@ -328,7 +330,9 @@ a:link {
 }
 
 .aboutWrapper {
-    width: 47%;
+    max-width: 900px;
+	padding: 0 60px 0 60px;
+	width: auto;
     margin: 0 auto;
 }
 
@@ -357,7 +361,9 @@ footer {
 footer>p {
     padding-top: 10px;
     padding-bottom: 10px;
-	width: 47%;
+    max-width: 900px;
+	padding: 0 60px 0 60px;
+	width: auto;
 	margin-left: auto;
     margin-right: auto;
 }
