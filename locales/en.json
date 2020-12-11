@@ -2,7 +2,7 @@
     "topbar": {
         "about": "ABOUT",
         "commands": "COMMANDS",
-        "getBaron": "GET BARON"
+        "getBaron": "GET VEIGAR"
     },
     "stats": {
         "servers": "Servers",
@@ -11,11 +11,11 @@
     },
     "about": {
         "title": "ABOUT",
-        "description": "Baron Bot is a League of Legends Discord bot. It tries to offer the most accurate information, in the shortest time possible. The bot's objective is to eliminate the effort to open third party websites to get crucial information."
+        "description": "Veigar Bot is a Discord support bot. It tries to offer the most accurate information, in the shortest time possible. The bot's objective is to eliminate the effort to open third party websites to get crucial information."
     },
     "commands": {
         "title": "COMMANDS",
-        "commands": "COMMANDS",
+        "commands": "COMMAND",
         "description": "DESCRIPTION",
         "usage": "USAGE"
     },
