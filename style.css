@@ -70,7 +70,7 @@ html, body {
     float: left;
 }
 
-.topBar-GetBaron, .topBar-About, .topBar-Commands {
+.topBar-Get, .topBar-About, .topBar-Commands {
     float: right;
     line-height: 61px;
 }
@@ -84,7 +84,7 @@ html, body {
     margin-right: 25px;
 }
 
-.topBar-GetBaron, .topBar-About, .topBar-Commands {
+.topBar-Get, .topBar-About, .topBar-Commands {
     height: 100%;
     padding-left: 22px;
     padding-right: 22px;
@@ -122,7 +122,7 @@ html, body {
     transition: color 100ms linear;
 }
 
-.topBar-GetBaron {
+.topBar-Get {
     background-color: #fff;
     color: #000;
     cursor: pointer;
@@ -139,7 +139,7 @@ html, body {
     transition: color 100ms linear;
 }
 
-.topBar-GetBaron:hover {
+.topBar-Get:hover {
     background-color: #000;
     color: #fff;
     -webkit-transition: background-color 100ms linear;
@@ -158,14 +158,14 @@ html, body {
     padding-left: 20px;
 }
 
-.baronImage {
+.banner {
     height: 55%;
     width: 55%;
     margin: 0 auto;
     margin-top: 104px;
 }
 
-.baronImage>img {
+.banner>img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -531,7 +531,7 @@ hr {
         border-bottom: 0;
     }
 
-    .baronImage {
+    .banner {
         height: 85%;
         width: 85%;
         margin-top: 40px;
@@ -603,7 +603,7 @@ hr {
 }
 
 @media screen and (max-width: 362px) {
-    .topBar-GetBaron {
+    .topBar-Get {
         font-size: 95%;
         padding-left: 13px;
         padding-right: 13px;
@@ -611,7 +611,7 @@ hr {
 }
 
 @media screen and (max-width: 326px) {
-    .topBar-GetBaron {
+    .topBar-Get {
         font-size: 85%;
         padding-left: 12px;
         padding-right: 12px;

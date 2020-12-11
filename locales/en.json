@@ -2,7 +2,7 @@
     "topbar": {
         "about": "ABOUT",
         "commands": "COMMANDS",
-        "getBaron": "GET VEIGAR"
+        "get": "GET VEIGAR"
     },
     "stats": {
         "servers": "Servers",
