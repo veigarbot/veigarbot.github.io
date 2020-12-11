@@ -286,6 +286,7 @@ table tr {
 
 table th, table td {
     padding: .625em;
+	padding-bottom: .775em;
     text-align: center;
 }
 
