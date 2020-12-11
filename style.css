@@ -484,6 +484,7 @@ hr {
     .pinkBg {
         background-color: #FD0181;
         color: white;
+		border-bottom: 0;
     }
 
     table {
@@ -510,7 +511,6 @@ hr {
         margin-bottom: .625em;
         border: 0;
         padding: 0;
-        border-bottom: 3px solid #ddd;
     }
 
     table td {
