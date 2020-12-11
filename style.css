@@ -168,6 +168,12 @@ html, body {
 .banner>img {
     max-width: 100%;
     max-height: 100%;
+	pointer-events: none;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .quote {
