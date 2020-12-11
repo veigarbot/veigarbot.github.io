@@ -3,15 +3,14 @@ $(document).ready(function () {
 
     setLanguage("en");
     const ps = new PerfectScrollbar(".dropdown-content");
-
+	
     $.getJSON("veigar-stats.json", function (result) {
         if(!result) return;
-        result = JSON.parse(result);
         
         //Insert stats.
-        $(".statsServersNum").text(numberWithCommas(result.stats.s));
-        $(".statsUsersNum").text(numberWithCommas(result.stats.u));
-        $(".statsChannelsNum").text(numberWithCommas(result.stats.c));
+        $(".statsServersNum").text(numberWithCommas(result.s));
+        $(".statsUsersNum").text(numberWithCommas(result.u));
+        $(".statsChannelsNum").text(numberWithCommas(result.c));
 
         console.log("[x] Stats set successfully.");
     });
