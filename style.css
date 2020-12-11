@@ -587,13 +587,13 @@ hr {
     }
 }
 
-@media screen and (max-width: 733px) {
+@media screen and (max-width: 833px) {
     .topBar-About, .topBar-Commands {
         display: none;
     }
 }
 
-@media screen and (max-width: 466px) {
+@media screen and (max-width: 566px) {
     .topBar-Title {
         display: none;
     }
