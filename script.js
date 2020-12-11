@@ -4,7 +4,7 @@ $(document).ready(function () {
     setLanguage("en");
     const ps = new PerfectScrollbar(".dropdown-content");
 	
-    $.getJSON("https://veigar-discord-bot.glitch.me/stats.json", function (result) {
+    $.getJSON("veigar-stats.json", function (result) {
         if(!result) return;
         
         //Insert stats.
