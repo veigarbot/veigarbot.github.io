@@ -3,7 +3,7 @@ $(document).ready(function () {
 	
 	setTimeout(() => {
 		openPreloader();
-	}, 4000);
+	}, 10000);
 	
 	var savedLang = localStorage.getItem('language');
 	if(savedLang == null) savedLang = "en";
@@ -30,7 +30,7 @@ $(document).ready(function () {
 		
 		setTimeout(() => {
 			openPreloader();
-		}, 4000);
+		}, 10000);
     });
 
     //Top bar "shortcuts".
