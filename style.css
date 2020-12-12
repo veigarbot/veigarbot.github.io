@@ -40,6 +40,21 @@ html, body {
 	background: #000;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #000;
+  background: #FD0181;
+}
+::selection {
+  color: #000;
+  background: #FD0181;
+}
+.hoverDark *::-moz-selection { /* Code for Firefox */
+  color: #FFF;
+}
+.hoverDark *::selection {
+  color: #FFF;
+}
+
 #firstDiv {
     height: 100%;
     width: 100%;
