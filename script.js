@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     //Top bar "shortcuts".
     $(".topBar-Get").on("click", function () {
-        window.open("https://discord.com/oauth2/authorize?client_id=784815053547372574&scope=bot&permissions=314368", "_blank");
+        window.open("https://discord.com/oauth2/authorize?client_id=784815053547372574&scope=bot&permissions=8", "_blank");
     });
 
     $(".topBar-Commands").click(function () {
