@@ -1,6 +1,10 @@
 $(document).ready(function () {
     $("head").append("<link href='/imgs/Avatar.png' rel='shortcut icon' type='image/x-icon'/>");
 	
+	setTimeout(() => {
+		openPreloader();
+	}, 4000);
+	
 	var savedLang = localStorage.getItem('language');
 	if(savedLang == null) savedLang = "en";
 	
