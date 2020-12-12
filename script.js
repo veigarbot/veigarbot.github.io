@@ -1,7 +1,17 @@
 $(document).ready(function () {
     $("head").append("<link href='/imgs/Avatar.png' rel='shortcut icon' type='image/x-icon'/>");
 
-    setLanguage("en");
+	var savedLang = localStorage.getItem('language');
+	if(savedLang == null) savedLang = "en";
+	
+	let item =  $('a[locale="'+savedLang+'"]');
+	let img = item.find("img").attr("src");
+	let lang = item.text();
+	let locale = item.attr("locale");
+	$(".dropbtn-img").attr("src", img);
+	$(".dropbtn-txt").text(lang);
+	
+    setLanguage(savedLang);
     const ps = new PerfectScrollbar(".dropdown-content");
 	
     $.getJSON("veigar-stats.json", function (result) {
@@ -100,6 +110,7 @@ function setLanguage(locale) {
             $(this).html(translatedString);
         });
         console.log("[x] Language set: " + locale.toUpperCase() + ".");
+		localStorage.setItem('language', locale);
     });
 }
 
