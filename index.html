@@ -21,17 +21,19 @@
 </head>
 
 <body>
-	<section id="preloader" class="">
-		<div class="preloaderSection sectionLeft"></div>
-		<div class="preloaderSection sectionRight"></div>
-		<div id="preloaderAnim" class=""></div>
-	</section>
-	
     <div id="app" class="preloading">
+		<section id="preloader" class="">
+			<div class="preloaderSection sectionLeft"></div>
+			<div class="preloaderSection sectionRight"></div>
+			<div id="preloaderAnim" class="">
+				<lottie-player src="animations/preloader.json" background="transparent" speed="1" style="width: 160px; height: 160px;" loop autoplay></lottie-player>
+			</div>
+		</section>
+	
 		<div id="firstDiv">
 			<div class="topBar hoverDark">
 				<a class="topBar-Title" style="float: left;">VEIGAR BOT</a>
-				<img src="/imgs/Avatar.png" class="topBarImg">
+				<img src="imgs/Avatar.png" class="topBarImg">
 
 				<div class="lang-dropdown">
 					<div class="dropbtn"><img class="dropbtn-img"><span
@@ -151,19 +153,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
     <script src="scroller/perfect-scrollbar.js"></script>
     <script src="script.js"></script>
-
-    <script type="text/javascript">
-        (function(t,l){
-            let w=window,d=document,s=d.createElement('script'),f=d.getElementsByTagName('script')[0];
-            w[t]=w[t]||function(){(w["_rgea"]=w["_rgea"]||[["uts",new Date()]]).push(Array.prototype.slice.call(arguments));w.RGEA&&w.RGEA.p();};
-            s.type='text/javascript'; s.async=true; s.defer=true; s.src=l; f.parentNode.insertBefore(s,f);
-        })("rgea", "https://static.developer.riotgames.com/js/rgea.min.js");
-    
-        rgea("propertyId", "RGEA0002-4d189a32-4b66-4f9b-8a2a-e7c1dae791c6");
-        //rgea("uid", "puuid"); // assuming the user is verified; encrypted puuid
-        //rgea("lolpid", "platformId"); // league platform id (na1, la2, euw1, kr, etc)
-        //rgea("lolaid", "accountId"); // assuming the user is verified; encrypted account id
-        rgea("anonymous", false); // defaults to true
-    </script>    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
