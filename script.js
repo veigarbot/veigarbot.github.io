@@ -1,10 +1,6 @@
 $(document).ready(function () {
     $("head").append("<link href='/imgs/Avatar.png' rel='shortcut icon' type='image/x-icon'/>");
 	
-	setTimeout(() => {
-		openPreloader();
-	}, 2000);
-	
 	var savedLang = localStorage.getItem('language');
 	if(savedLang == null) savedLang = "en";
 	
@@ -30,7 +26,7 @@ $(document).ready(function () {
 		
 		setTimeout(() => {
 			openPreloader();
-		}, 2000);
+		}, 4000);
     });
 
     //Top bar "shortcuts".
