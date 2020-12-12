@@ -1,6 +1,10 @@
 $(document).ready(function () {
     $("head").append("<link href='/imgs/Avatar.png' rel='shortcut icon' type='image/x-icon'/>");
-
+	
+	setTimeout(() => {
+		openPreloader();
+	}, 2000);
+	
 	var savedLang = localStorage.getItem('language');
 	if(savedLang == null) savedLang = "en";
 	
@@ -23,6 +27,10 @@ $(document).ready(function () {
         $(".statsChannelsNum").text(numberWithCommas(result.c));
 
         console.log("[x] Stats set successfully.");
+		
+		setTimeout(() => {
+			openPreloader();
+		}, 2000);
     });
 
     //Top bar "shortcuts".
@@ -99,6 +107,17 @@ $(document).ready(function () {
         $("body").css("overflow", "visible");
     });
 });
+
+function openPreloader() {
+	$("#preloaderAnim").addClass("hidden");
+	setTimeout(() => {
+		$("#preloader").addClass("loaded");
+		$("#app").removeClass("preloading");
+	}, 1000);
+	setTimeout(() => {
+		$("#preloader").addClass("loadedHidden");
+	}, 3000);
+}
 
 function setLanguage(locale) {
     $.getJSON("locales/" + locale + ".json", function (json) {

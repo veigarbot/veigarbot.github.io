@@ -21,123 +21,131 @@
 </head>
 
 <body>
-    <div id="firstDiv">
-        <div class="topBar hoverDark">
-            <a class="topBar-Title" style="float: left;">VEIGAR BOT</a>
-            <img src="/imgs/Avatar.png" class="topBarImg">
+	<section id="preloader" class="">
+		<div class="preloaderSection sectionLeft"></div>
+		<div class="preloaderSection sectionRight"></div>
+		<div id="preloaderAnim" class=""></div>
+	</section>
+	
+    <div id="app" class="preloading">
+		<div id="firstDiv">
+			<div class="topBar hoverDark">
+				<a class="topBar-Title" style="float: left;">VEIGAR BOT</a>
+				<img src="/imgs/Avatar.png" class="topBarImg">
 
-            <div class="lang-dropdown">
-                <div class="dropbtn"><img class="dropbtn-img"><span
-                        class="dropbtn-txt"></span><span class="dropbtn-arrow">&emsp;▼</span></div>
-                <div class="dropdown-content">
-                    <a locale="en"><li><img src="https://image.ibb.co/kfd1A9/United_Kingdom.png" /><span class="lang-name">English</span></li></a>
-                    <!--<a locale="de"><li><img src="https://image.ibb.co/d0MQKK/Germany.png" /><span class="lang-name">Deutsch</span></li></a>
-                    <a locale="es"><li><img src="https://image.ibb.co/f3dexp/Spain.png" /><span class="lang-name">Español</span></li></a>
-                    <a locale="fr"><li><img src="https://image.ibb.co/fwgzxp/France.png" /><span class="lang-name">Français</span></li></a>
-                    <a locale="gr"><li><img src="https://i.ibb.co/sPx7gWk/Grecee.png" /><span class="lang-name">Ελληνικά</span></li></a>
-                    <a locale="hu"><li><img src="https://image.ibb.co/dkHuV9/Hungary.png" /><span class="lang-name">Magyar</span></li></a>
-                    <a locale="nl"><li><img src="https://image.ibb.co/jhmoq9/Netherlands.png" /><span class="lang-name">Nederlands</span></li></a>
-                    <a locale="pl"><li><img src="https://image.ibb.co/e5q3OU/Poland.png" /><span class="lang-name">Polski</span></li></a>
-                    <a locale="br"><li><img src="https://image.ibb.co/ezMMA9/Brazil.png" /><span class="lang-name">Português</span></li></a>
-                    <a locale="pt"><li><img src="https://image.ibb.co/cuRzxp/Portugal.png" /><span class="lang-name">Português</span></li></a>
-                    <a locale="ar"><li><img src="https://image.ibb.co/ktB5Mp/Egypt.png" /><span class="lang-name">العربية</span></li></a>
-                    <a locale="tr"><li><img src="https://i.ibb.co/pjPcRQt/Turkey.png" /><span class="lang-name">Türkçe</span></li></a>
-                    <a locale="ru"><li><img src="https://image.ibb.co/iq8ZV9/Russia.png" /><span class="lang-name">Русский язык</span></li></a>
-                    <a locale="kr"><li><img src="https://i.ibb.co/zmvBmM3/Korea.png" /><span class="lang-name">한국어</span></li></a>-->
-                </div>
-            </div>
-
-            <div translate="topbar.get" class="topBar-Get"></div>
-            <div translate="topbar.commands" class="topBar-Commands"></div>
-            <div translate="topbar.about" class="topBar-About"></div>
-        </div>
-        <div class="firstDiv-Center">
-            <div class="banner" onmousedown="return false">
-                <img src="imgs/WebsiteImageWithLangs.png?1">
-            </div>
-            <div class="stats hoverDark">
-                <div class="statsServers">
-                    <div><span class="statsTitle" translate="stats.servers"></span>
-                        <br><span class="statsServersNum num"></span></div>
-                </div>
-                <div class="statsUsers">
-                    <div><span class="statsTitle" translate="stats.users"></span>
-                        <br><span class="statsUsersNum num"></span></div>
-                </div>
-                <div class="statsChannels">
-                    <div><span class="statsTitle" translate="stats.channels"></span>
-                        <br><span class="statsChannelsNum num"></span></div>
-                </div>
-            </div>
-        </div>
-        <a href="https://discord.gg/j4UAbp4jym" target="_blank"><img href="https://discord.gg/j4UAbp4jym" src="https://discordapp.com/api/guilds/784434217034973184/embed.png" class="discordServerImg"></a>
-    </div>
-    <div id="about">
-        <div class="aboutWrapper">
-            <p translate="about.title" class="aboutTitle"></p>
-            <p translate="about.description" class="aboutContent"></p>
-        </div>
-    </div>
-    <div id="commands" class="hoverDark">
-        <div class="tabela">
-            <p translate="commands.title" class="commandsTitle"></p>
-            <div class="tableOutline"><table>
-                <thead>
-                    <tr class="noBottomBorder">
-                        <th translate="commands.commands" scope="col"></th>
-                        <th translate="commands.description" scope="col"></th>
-                        <th translate="commands.usage" scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Command" class="pinkBg">!help</td>
-                        <td translate="commandsDesc.help" data-label="Description"></td>
-                        <td data-label="Usage"><a translate="commandsUsage.help"></a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Command" class="pinkBg">!commands</td>
-                        <td translate="commandsDesc.commands" data-label="Description"></td>
-                        <td data-label="Usage"><a translate="commandsUsage.commands"></a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Command" class="pinkBg">!play</td>
-                        <td translate="commandsDesc.play" data-label="Description"></td>
-                        <td data-label="Usage"><a translate="commandsUsage.play"></a></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Command" class="pinkBg">!skip</td>
-                        <td translate="commandsDesc.skip" data-label="Description"></td>
-                        <td data-label="Usage"><a translate="commandsUsage.skip"></a></td>
-                    </tr>
-                    <tr class="noBottomBorder">
-                        <td data-label="Command" class="pinkBg">!stop</td>
-                        <td translate="commandsDesc.stop" data-label="Description"></td>
-                        <td data-label="Usage"><a translate="commandsUsage.stop"></a></td>
-                    </tr>
-                </tbody>
-            </table></div>
-            <br>
-            <br>
-        </div>
-    </div>
-    <div id="about">
-        <div class="aboutWrapper">
-            <p translate="contact.title" class="aboutTitle"></p>
-            <br>
-            <p translate="contact.description" class="aboutContent"></p>
-			<a href="https://discord.gg/j4UAbp4jym" target="_blank"><img href="https://discord.gg/j4UAbp4jym" src="https://discordapp.com/api/guilds/784434217034973184/embed.png" style="margin-bottom: 30px;"></a>
-        </div>
-    </div>
-	<footer class="hoverDark">
-        <br>
-        <br>
-        <p translate="footer.text"></p>
-        <br>
-        <p>All rights reserved.</p>
-        <br>
-        <br>
-	</footer>
+				<div class="lang-dropdown">
+					<div class="dropbtn"><img class="dropbtn-img"><span
+							class="dropbtn-txt"></span><span class="dropbtn-arrow">&emsp;▼</span></div>
+					<div class="dropdown-content">
+						<a locale="en"><li><img src="https://image.ibb.co/kfd1A9/United_Kingdom.png" /><span class="lang-name">English</span></li></a>
+						<!--<a locale="de"><li><img src="https://image.ibb.co/d0MQKK/Germany.png" /><span class="lang-name">Deutsch</span></li></a>
+						<a locale="es"><li><img src="https://image.ibb.co/f3dexp/Spain.png" /><span class="lang-name">Español</span></li></a>
+						<a locale="fr"><li><img src="https://image.ibb.co/fwgzxp/France.png" /><span class="lang-name">Français</span></li></a>
+						<a locale="gr"><li><img src="https://i.ibb.co/sPx7gWk/Grecee.png" /><span class="lang-name">Ελληνικά</span></li></a>
+						<a locale="hu"><li><img src="https://image.ibb.co/dkHuV9/Hungary.png" /><span class="lang-name">Magyar</span></li></a>
+						<a locale="nl"><li><img src="https://image.ibb.co/jhmoq9/Netherlands.png" /><span class="lang-name">Nederlands</span></li></a>
+						<a locale="pl"><li><img src="https://image.ibb.co/e5q3OU/Poland.png" /><span class="lang-name">Polski</span></li></a>
+						<a locale="br"><li><img src="https://image.ibb.co/ezMMA9/Brazil.png" /><span class="lang-name">Português</span></li></a>
+						<a locale="pt"><li><img src="https://image.ibb.co/cuRzxp/Portugal.png" /><span class="lang-name">Português</span></li></a>
+						<a locale="ar"><li><img src="https://image.ibb.co/ktB5Mp/Egypt.png" /><span class="lang-name">العربية</span></li></a>
+						<a locale="tr"><li><img src="https://i.ibb.co/pjPcRQt/Turkey.png" /><span class="lang-name">Türkçe</span></li></a>
+						<a locale="ru"><li><img src="https://image.ibb.co/iq8ZV9/Russia.png" /><span class="lang-name">Русский язык</span></li></a>
+						<a locale="kr"><li><img src="https://i.ibb.co/zmvBmM3/Korea.png" /><span class="lang-name">한국어</span></li></a>-->
+					</div>
+				</div>
+	
+				<div translate="topbar.get" class="topBar-Get"></div>
+				<div translate="topbar.commands" class="topBar-Commands"></div>
+				<div translate="topbar.about" class="topBar-About"></div>
+			</div>
+			<div class="firstDiv-Center">
+				<div class="banner" onmousedown="return false">
+					<img src="imgs/WebsiteImageWithLangs.png?1">
+				</div>
+				<div class="stats hoverDark">
+					<div class="statsServers">
+						<div><span class="statsTitle" translate="stats.servers"></span>
+							<br><span class="statsServersNum num"></span></div>
+					</div>
+					<div class="statsUsers">
+						<div><span class="statsTitle" translate="stats.users"></span>
+							<br><span class="statsUsersNum num"></span></div>
+					</div>
+					<div class="statsChannels">
+						<div><span class="statsTitle" translate="stats.channels"></span>
+							<br><span class="statsChannelsNum num"></span></div>
+					</div>
+				</div>
+			</div>
+			<a href="https://discord.gg/j4UAbp4jym" target="_blank"><img href="https://discord.gg/j4UAbp4jym" src="https://discordapp.com/api/guilds/784434217034973184/embed.png" class="discordServerImg"></a>
+		</div>
+		<div id="about">
+			<div class="aboutWrapper">
+				<p translate="about.title" class="aboutTitle"></p>
+				<p translate="about.description" class="aboutContent"></p>
+			</div>
+		</div>
+		<div id="commands" class="hoverDark">
+			<div class="tabela">
+				<p translate="commands.title" class="commandsTitle"></p>
+				<div class="tableOutline"><table>
+					<thead>
+						<tr class="noBottomBorder">
+							<th translate="commands.commands" scope="col"></th>
+							<th translate="commands.description" scope="col"></th>
+							<th translate="commands.usage" scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-label="Command" class="pinkBg">!help</td>
+							<td translate="commandsDesc.help" data-label="Description"></td>
+							<td data-label="Usage"><a translate="commandsUsage.help"></a></td>
+						</tr>
+						<tr>
+							<td data-label="Command" class="pinkBg">!commands</td>
+							<td translate="commandsDesc.commands" data-label="Description"></td>
+							<td data-label="Usage"><a translate="commandsUsage.commands"></a></td>
+						</tr>
+						<tr>
+							<td data-label="Command" class="pinkBg">!play</td>
+							<td translate="commandsDesc.play" data-label="Description"></td>
+							<td data-label="Usage"><a translate="commandsUsage.play"></a></td>
+						</tr>
+						<tr>
+							<td data-label="Command" class="pinkBg">!skip</td>
+							<td translate="commandsDesc.skip" data-label="Description"></td>
+							<td data-label="Usage"><a translate="commandsUsage.skip"></a></td>
+						</tr>
+						<tr class="noBottomBorder">
+							<td data-label="Command" class="pinkBg">!stop</td>
+							<td translate="commandsDesc.stop" data-label="Description"></td>
+							<td data-label="Usage"><a translate="commandsUsage.stop"></a></td>
+						</tr>
+					</tbody>
+				</table></div>
+				<br>
+				<br>
+			</div>
+		</div>
+		<div id="about">
+			<div class="aboutWrapper">
+				<p translate="contact.title" class="aboutTitle"></p>
+				<br>
+				<p translate="contact.description" class="aboutContent"></p>
+				<a href="https://discord.gg/j4UAbp4jym" target="_blank"><img href="https://discord.gg/j4UAbp4jym" src="https://discordapp.com/api/guilds/784434217034973184/embed.png" style="margin-bottom: 30px;"></a>
+			</div>
+		</div>
+		<footer class="hoverDark">
+			<br>
+			<br>
+			<p translate="footer.text"></p>
+			<br>
+			<p>All rights reserved.</p>
+			<br>
+			<br>
+		</footer>
+	</div>
 	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
