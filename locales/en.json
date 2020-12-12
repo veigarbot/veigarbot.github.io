@@ -28,7 +28,7 @@
         "text": "Website and bot were made with <span>❤</span> by StylexTV."
     },
     "commandsDesc": {
-        "help": "General information.",
+        "help": "If you ever need help.",
         "commands": "A list of every command.",
         "play": "Play a song with a given url.",
         "skip": "Skip the currently playing song.",
